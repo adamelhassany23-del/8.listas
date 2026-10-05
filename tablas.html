@@ -9,6 +9,8 @@
             border:2px solid black;
             border-collapse: collapse;
         }
+    th {background-color: blue;
+        color: azure;}
     </style>
 </head>
 <body>
@@ -28,6 +30,67 @@
             <td>Jose</td>
             <td>Pérez</td>
             <td>94</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>Fernandez</td>
+            <td>61</td>
+        </tr>
+    </table>
+    <h1>Caption y Colspan</h1>
+    <table>
+        <caption>Telefónos</caption>
+    <tr>
+        <th>Nombre</th>
+        <th colspan="2">Telefono</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>455490973</td>
+        <td>783265789</td>
+    </tr>
+    <tr>
+        <td>Pepe Pérez</td>
+        <td>678965327</td>
+        <td>678325678</td>
+    </tr>
+    </table>
+    <h1>RowSpan</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <td>Juan</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefono</th>
+            <td>768935678</td>
+        </tr>
+        <tr>
+            <td>67838388</td>
+        </tr>
+    </table>
+    <h1>Propiedades por columnas</h1>
+    <table>
+        <caption>Listado de Libros</caption>
+        <colgroup>
+            <col style="background-color: crimson;">
+            <col style="background-color: rgb(22, 230, 212);">
+            <col style="background-color: rgb(200, 220, 20);">
+        </colgroup>
+        <tr>
+        <th>ISBN</th>
+        <th>Título</th>
+        <th>Precio</th>
+        </tr>
+        <tr>
+            <td>347</td>
+            <td>Empezando con HTML</td>
+            <td>53€</td>
+        </tr>
+        <tr>
+            <td>4323</td>
+            <td>Intro a CSS</td>
+            <td>43€</td>
         </tr>
     </table>
 </body>
